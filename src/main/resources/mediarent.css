@@ -1,0 +1,215 @@
+.root {
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 13px;
+    -fx-accent: #1768a4;
+    -fx-focus-color: #1d71b6;
+    -fx-faint-focus-color: #b8daf455;
+}
+
+.aplicacion, .panel {
+    -fx-background-color: #f1f6fc;
+}
+
+.cabecera {
+    -fx-background-color: linear-gradient(to right, #102c4d, #1c4b76);
+    -fx-padding: 13 22;
+}
+
+.marca {
+    -fx-text-fill: white;
+    -fx-font-size: 23px;
+    -fx-font-weight: bold;
+}
+
+.subtitulo {
+    -fx-text-fill: #d4e6f8;
+    -fx-font-size: 12px;
+}
+
+.tab-pane > .tab-header-area {
+    -fx-padding: 0 0 0 16;
+}
+
+.tab-pane > .tab-header-area > .tab-header-background {
+    -fx-background-color: #e2edf8;
+    -fx-border-color: transparent transparent #c5d7e9 transparent;
+}
+
+.tab-pane .tab {
+    -fx-background-color: transparent;
+    -fx-padding: 7 17;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #f1f6fc;
+    -fx-border-color: transparent transparent #1768a4 transparent;
+    -fx-border-width: 0 0 3 0;
+}
+
+.tab .tab-label {
+    -fx-text-fill: #234967;
+    -fx-font-weight: bold;
+}
+
+.panel {
+    -fx-padding: 18 21 16 21;
+}
+
+.titulo {
+    -fx-text-fill: #173754;
+    -fx-font-size: 19px;
+    -fx-font-weight: bold;
+}
+
+.etiqueta {
+    -fx-text-fill: #294761;
+    -fx-font-weight: bold;
+}
+
+.formulario {
+    -fx-background-color: white;
+    -fx-background-radius: 9;
+    -fx-border-color: #cbdcec;
+    -fx-border-radius: 9;
+    -fx-padding: 12 14 15 14;
+}
+
+.button {
+    -fx-background-color: #e4edf7;
+    -fx-background-radius: 6;
+    -fx-text-fill: #183957;
+    -fx-font-weight: bold;
+    -fx-padding: 7 12;
+    -fx-border-color: transparent;
+    -fx-border-radius: 6;
+}
+
+.button:hover {
+    -fx-background-color: #d4e5f5;
+}
+
+.button:focused, .combo-box:focused {
+    -fx-border-color: #2879b6;
+}
+
+.button.primario {
+    -fx-background-color: #155f96;
+    -fx-text-fill: white;
+}
+
+.button.primario:hover {
+    -fx-background-color: #104b77;
+}
+
+.button.peligro {
+    -fx-text-fill: #8f3044;
+}
+
+.text-field, .combo-box {
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-min-height: 33;
+}
+
+.combo-box {
+    -fx-background-color: #edf4fb;
+    -fx-border-color: #c4d6e8;
+}
+
+.table-view {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #c4d6e8;
+    -fx-padding: 1;
+    -fx-fixed-cell-size: 36;
+}
+
+.table-view .column-header-background, .table-view .column-header, .table-view .filler {
+    -fx-background-color: #e2edf8;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #234460;
+    -fx-padding: 0 4;
+}
+
+.table-view .column-header {
+    -fx-pref-height: 34;
+}
+
+.table-row-cell:filled:odd {
+    -fx-background-color: #f6f9fd;
+}
+
+.table-row-cell:filled:selected {
+    -fx-background-color: #cae4fb;
+}
+
+.table-row-cell:filled:selected .table-cell {
+    -fx-text-fill: #16344e;
+}
+
+.table-cell {
+    -fx-alignment: center-left;
+    -fx-padding: 0 8;
+    -fx-border-color: transparent;
+}
+
+.table-cell.numero {
+    -fx-alignment: center-right;
+}
+
+.etiqueta-estado {
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 12;
+    -fx-padding: 3 7;
+}
+
+.activo {
+    -fx-background-color: #d6eafd;
+    -fx-text-fill: #144d79;
+}
+
+.devuelto {
+    -fx-background-color: #e1efe7;
+    -fx-text-fill: #265b43;
+}
+
+.estado {
+    -fx-background-color: #e2edf8;
+    -fx-border-color: #c5d7e9 transparent transparent transparent;
+    -fx-padding: 8 22;
+}
+
+.estado .label {
+    -fx-text-fill: #254864;
+}
+
+.indicador {
+    -fx-min-width: 7;
+    -fx-max-width: 7;
+    -fx-min-height: 7;
+    -fx-max-height: 7;
+    -fx-background-radius: 4;
+    -fx-background-color: #2a70a6;
+}
+
+.label.aviso {
+    -fx-text-fill: #8f3044;
+    -fx-font-weight: bold;
+}
+
+.dialog-pane {
+    -fx-background-color: #f1f6fc;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: #e2edf8;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-text-fill: #173754;
+    -fx-font-weight: bold;
+}
