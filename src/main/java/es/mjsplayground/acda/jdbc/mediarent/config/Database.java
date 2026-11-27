@@ -84,6 +84,22 @@ public final class Database {
                     stock INTEGER NOT NULL CHECK (stock BETWEEN 0 AND 2147483647)
                 )
                 """);
+
+        sentencia.executeUpdate("""
+                CREATE TABLE IF NOT EXISTS alquiler (
+                id INTEGER PRIMARY KEY,
+                material_id INTEGER NOT NULL,
+                unidades INTEGER NOT NULL CHECK (unidades > 0),
+                dias INTEGER NOT NULL CHECK (dias > 0),
+                tarifa_dia INTEGER NOT NULL CHECK (tarifa_dia BETWEEN 1 AND 100000000),
+                importe INTEGER NOT NULL CHECK (importe >= 0),
+                fecha_registro TEXT NOT NULL,
+                estado TEXT NOT NULL CHECK (length(estado) BETWEEN 1 AND 30),
+                FOREIGN KEY (material_id) REFERENCES material(id)
+                    ON DELETE RESTRICT
+                    ON UPDATE CASCADE
+                )
+                """);
     }
 
     private void insertarCatalogoInicial(Statement sentencia) throws SQLException {
